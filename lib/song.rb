@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     #@@genres.length 
     hash = {}
-    @@genres.each do |elem| 
+    @@genres.map do |elem| 
       if hash.include?(elem) == false
         hash[elem] = 1 
       else 
