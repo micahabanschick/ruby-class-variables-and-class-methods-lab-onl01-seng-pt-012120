@@ -28,7 +28,7 @@ class Song
   end 
   
   def self.genre_count
-    @@genres.length 
+    #@@genres.length 
     hash = {}
     @@genres.each do |elem| 
       if hash.include?(elem) == false
