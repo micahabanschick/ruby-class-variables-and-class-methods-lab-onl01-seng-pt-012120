@@ -29,9 +29,14 @@ class Song
   
   def self.genre_count
     @@genres.length 
-    arr = []
-    arr = @@genres.filter{|elem| arr.include?(elem) == false}
-    arr
+    hash = {}
+    @@genres.each do |elem| 
+      if hash.include?(elem) == false
+        hash[elem] = 1 
+      else 
+        hash[elem] += 1
+      end 
+    end
   end 
   
   def self.artist_count
