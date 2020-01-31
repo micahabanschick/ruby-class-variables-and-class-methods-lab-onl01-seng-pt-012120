@@ -43,7 +43,15 @@ class Song
   end 
   #binding.pry
   def self.artist_count
-    @@artists.length
+    hash = {}
+    @@artists.map do |elem| 
+      if hash.include?(elem) == false
+        hash[elem] = 1 
+      else 
+        hash[elem] += 1
+      end 
+    end
+    hash
   end 
   
 end 
