@@ -41,7 +41,7 @@ class Song
     end
     hash
   end 
-  binding.pry
+  #binding.pry
   def self.artist_count
     @@artists.length
   end 
