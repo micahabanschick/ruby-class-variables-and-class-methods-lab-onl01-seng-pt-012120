@@ -30,7 +30,7 @@ class Song
   def self.genre_count
     @@genres.length 
     arr = []
-    arr = @@genres.filter{|elem| arr.include?(elem) == false}
+    arr = @@genres.filter{|elem| arr.include?(elem).nil?}
     arr
   end 
   
