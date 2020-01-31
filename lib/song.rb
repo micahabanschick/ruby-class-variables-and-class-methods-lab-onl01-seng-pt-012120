@@ -36,7 +36,7 @@ class Song
       if hash.include?(elem) == false
         hash[elem] = 1 
       else 
-        hash[elem] += 1
+        hash[elem] << 1
       end 
     end
     hash
